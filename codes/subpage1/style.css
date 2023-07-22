@@ -1,0 +1,222 @@
+*{
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --colorb:#252525;
+    --colorb1:#292525;
+    --smooth:#dbf3bb;
+    --nick:#ff0000;
+    --tag:#a13ca1;
+    --tagtxt:#63d8ec;
+}
+
+body{
+    background-color: var(--colorb);
+}
+
+#main{
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    gap: 1rem;
+
+}
+#box{
+    display: flex;
+    flex-direction: column;
+
+    width: 80%;
+    height: 90%;
+
+    border-radius: 10px;
+    border-top: 1px solid var(--smooth);
+    border-bottom: 1px solid var(--smooth);
+    border-right: 1px solid var(--smooth);
+    border-left: 1px solid var(--smooth);
+
+    background-color: var(--colorb1);
+
+    box-shadow: rgb(194, 230, 136) 0px 20px 30px -10px;
+}
+
+#banner{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+
+    background: url(/banners/banner3.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    width: 100%;
+    height: 25%;
+
+}
+
+#icon{
+    width: 7rem;
+    height: 7rem;
+
+    background-position: center;
+    background-size: cover;
+    background-image: url(https://i.pinimg.com/236x/6f/89/4d/6f894d1a8b8672d499922dcd041c3274.jpg);
+
+    margin-left: 4%;
+
+    border-radius: 30px;
+    border: 1px solid var(--smooth);
+}
+#nick{
+    font-family: 'Ubuntu', sans-serif;
+    color: var(--nick);
+}
+
+#tags{
+    display: flex;
+    justify-content: center;
+    gap: 5vh;
+
+    width: 100%;
+    height: 30%;
+}
+
+#tagbox{
+    margin-top: 5%;
+    border: 1px solid var(--smooth);
+    border-radius: 10px;
+        
+    width: 20%;
+    height:20%;
+
+    text-align: center;
+}
+
+#tagtxt{
+    margin-top: 3%;
+    color: var(--tagtxt);
+    font-family: 'Indie Flower', cursive;
+}
+
+#desc{
+    display: flex;
+    justify-content: flex-start;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+    margin-bottom: 5%;
+
+    width: 100%;
+    height: 35%;
+
+}
+
+#description{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+
+    gap: 1rem;
+    
+}
+
+#textbox{
+    display: flex;
+    flex-direction: column;
+    
+    gap: 1rem;
+
+    width: 75%;
+    height: 80%;
+
+    word-break: break-all;
+}
+
+#reyna{
+    color: var(--tagtxt);
+    font-family: 'Labrada', serif;
+}
+
+#socials{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+
+    width: 100%;
+    height: 10%;
+
+
+}
+
+#ig,#wpp,#tt{
+    width: 20%;
+    height: 40%;
+
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+
+    border: 1.5px solid var(--smooth);
+    filter: brightness(120%);
+}
+#ig{
+    background-image: url(/faviicons/instagram.png);
+}
+#wpp{
+    background-image: url(/faviicons/whatsapp.png);
+}
+#tt{
+    background-image: url(/faviicons/twitter.png);
+}
+
+#back{
+    display: flex;
+    align-items: flex-end;
+
+    width: 80%;
+    height: 2rem;
+
+}
+
+#backHREF{
+    width: 1.5rem;
+    height: 80%;
+
+    background-repeat: no-repeat;
+    background-image: url(/faviicons/de-volta.png);
+    transform: scale(120%);
+}
+
+@media(max-height:740px){
+    #socials{
+        margin-top: 5%;
+    }
+    #tagbox{
+        height: 40%;
+    }
+    #tags{
+        gap: 3vh;
+    }
+}
+@media(max-height:700px){
+    #socials{
+        margin-top: 8%;
+    }
+    #desc{
+        margin-bottom: 10%;
+    }
+}
