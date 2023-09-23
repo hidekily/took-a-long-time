@@ -127,14 +127,14 @@ body{
 
 #backHREF{
     display: flex;
-    margin-top: 7%;
+    margin-top: 5%;
 
     width: 1.5rem;
     height: 80%;
 
     background-repeat: no-repeat;
-    background-image: url(/took-a-long-time-main/faviicons/de-volta.png);
-    transform: scale(120%);
+    background-image: url(/took-a-long-time-main/faviicons/caret-left-thin.png);
+    transform: scale(110%);
 }
 
 @keyframes borderanimation {
