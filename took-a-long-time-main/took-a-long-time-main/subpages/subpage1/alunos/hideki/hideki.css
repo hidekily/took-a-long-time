@@ -174,7 +174,7 @@ body{
     filter: brightness(120%);
 }
 #ig{
-    background-image: url(../took-a-long-time-main/faviicons/instagram.png);
+    background-image: url(/took-a-long-time-main/faviicons/instagram.png);
 }
 #wpp{
     background-image: url(/took-a-long-time-main/faviicons/whatsapp.png);
