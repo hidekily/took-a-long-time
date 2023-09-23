@@ -63,6 +63,7 @@ body{
     width: 100%;
     height: 25%;
 
+    border-bottom: 1px solid #05c02e;
 }
 
 #icon{
@@ -170,7 +171,6 @@ body{
     background-size: contain;
     background-position: center;
 
-    border: 1.5px solid var(--smooth);
     filter: brightness(120%);
 }
 #ig{
@@ -197,7 +197,7 @@ body{
     height: 80%;
 
     background-repeat: no-repeat;
-    background-image: url(de-volta.png);
+    background-image: url(/took-a-long-time-main/faviicons/de-volta.png);
     transform: scale(120%);
 }
 
