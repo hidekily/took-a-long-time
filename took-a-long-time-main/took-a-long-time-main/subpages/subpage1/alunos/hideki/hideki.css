@@ -63,7 +63,7 @@ body{
     width: 100%;
     height: 25%;
 
-    border-bottom: 1px solid #05c02e;
+    border: 1.5px solid #05c02e;
 }
 
 #icon{
@@ -199,6 +199,22 @@ body{
     background-repeat: no-repeat;
     background-image: url(/took-a-long-time-main/faviicons/caret-left-thin.png);
     transform: scale(108%);
+}
+
+#tagbox:hover{
+    animation: tags;
+    animation-iteration-count: 1;
+    animation-duration: 3s;
+
+    transform: scale(108%);
+}
+
+@keyframes tags {
+    0%{background-color: none;}
+    25%{background-color: var(--smooth);}
+    50%{background-color: var(--tag);}
+    75%{background-color: var(--tagtxt);}
+    100%{background-color: var(--nick);}
 }
 
 @media(max-height:740px){

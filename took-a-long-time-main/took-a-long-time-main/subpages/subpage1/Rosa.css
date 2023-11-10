@@ -79,10 +79,12 @@ body{
 
     box-shadow: #f02eaa66 -5px 5px, #f02eaa4d -10px 10px, #f02eaa33 -15px 15px, #f02eaa1a -20px 20px, #f02eaa0d -25px 25px;
 
-    background-color: var(--smooth);
+    background-color: #fd7bd6;
     color: #292525;
     border: solid 1px ;
     text-decoration: none;
+
+    border-radius: 10px;
 }
 
 

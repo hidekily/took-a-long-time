@@ -79,30 +79,14 @@ body{
 
     box-shadow: #f02eaa66 -5px 5px, #f02eaa4d -10px 10px, #f02eaa33 -15px 15px, #f02eaa1a -20px 20px, #f02eaa0d -25px 25px;
 
+    background-color: #fd7bd6;
+    text-decoration: none;
+    color: #000;
+
+    border-radius: 10px;
 }
 
-/* background images */
-#hdk1{
-    background-image: url(/took-a-long-time-main/pics/eyes.jpg);
-    
-}
-#hdk2{
-    background-image: url(/took-a-long-time-main/pics/face.jpg);
-}
-#hdk3{
-    background-image: url(/took-a-long-time-main/pics/scars.jpg);
 
-}
-#hdk4{
-    background-image: url(/took-a-long-time-main/pics/tongue.jpg);
-
-}
-#hdk5{
-    background-image: url();
-}
-#hdk6{
-    background-image: url();
-}
 
 
 /* hover animation */

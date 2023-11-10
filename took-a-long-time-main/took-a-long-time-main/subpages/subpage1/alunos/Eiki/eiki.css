@@ -201,6 +201,22 @@ body{
     transform: scale(120%);
 }
 
+#tagbox:hover{
+    animation: tags;
+    animation-iteration-count: 1;
+    animation-duration: 3s;
+
+    transform: scale(108%);
+}
+
+@keyframes tags {
+    0%{background-color: none;}
+    25%{background-color: var(--smooth);}
+    50%{background-color: var(--tag);}
+    75%{background-color: var(--tagtxt);}
+    100%{background-color: var(--nick);}
+}
+
 @media(max-height:740px){
     #socials{
         margin-top: 5%;
