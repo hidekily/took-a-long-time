@@ -1,0 +1,166 @@
+*{
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --colorb:#252525;
+    --colorb1:#292525;
+    --smooth:#dbf3bb;
+}
+
+body{
+    background-color: var(--colorb);
+}
+
+#main{
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+#box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 90%;
+
+    border-radius: 10px;
+    border-top: 1px solid var(--smooth);
+    border-bottom: 1px solid var(--smooth);
+    border-right: 1px solid var(--smooth);
+    border-left: 1px solid var(--smooth);
+
+    background-color: var(--colorb1);
+
+    box-shadow: rgb(194, 230, 136) 0px 20px 30px -10px;
+}
+
+#box:hover{
+    animation-name: borderanimation;
+    animation-iteration-count: 1;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+    
+    transition: 2s;
+}
+
+#ids{
+    width: 95%;
+    height: 95%;
+
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+#hdk1, #hdk2, #hdk3, #hdk4{
+    position: relative;
+    display: flex;
+    justify-self: center;
+    align-self: center;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    border: 1px solid var(--smooth);
+
+    width: 25%;
+    height: 45%;
+
+    transition: 1s;
+
+    box-shadow: #f02eaa66 -5px 5px, #f02eaa4d -10px 10px, #f02eaa33 -15px 15px, #f02eaa1a -20px 20px, #f02eaa0d -25px 25px;
+
+}
+
+/* background images */
+#hdk1{
+    background-image: url(/took-a-long-time-main/pics/eyes.jpg);
+    
+}
+#hdk2{
+    background-image: url(/took-a-long-time-main/pics/face.jpg);
+}
+#hdk3{
+    background-image: url(/took-a-long-time-main/pics/scars.jpg);
+
+}
+#hdk4{
+    background-image: url(/took-a-long-time-main/pics/tongue.jpg);
+
+}
+
+/* hover animation */
+
+#hdk1:hover, #hdk2:hover, #hdk3:hover, #hdk4:hover{
+    animation: empress;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+
+    transform: scale(108%);
+}
+
+#hdk1:not(:hover), #hdk2:not(:hover), #hdk3:not(:hover), #hdk4:not(:hover){
+    animation: empress2;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+
+    transform: scale(100%);
+}
+
+@keyframes borderanimation {
+    0%{border-top: 1px solid var(--smooth);
+        border-bottom: 1px solid var(--smooth);
+        border-right: 1px solid var(--smooth);
+        border-left: 1px solid var(--smooth);}
+
+    25%{border-top: 1px solid #fd7bd6;
+        box-shadow: rgb(118, 103, 253) 0px 20px 30px -10px;}
+
+    50%{border-top: 1px solid #fd7bd6;
+        border-bottom: 1px solid #fd7bd6;}
+
+    75%{border-top: 1px solid #fd7bd6;
+        border-bottom: 1px solid #fd7bd6;
+        border-right: 1px solid #fd7bd6;}
+
+    100%{border-top: 1px solid #fd7bd6;
+        border-bottom: 1px solid #fd7bd6;
+        border-right: 1px solid #fd7bd6;
+        border-left: 1px solid #fd7bd6;
+        box-shadow: rgb(118, 103, 253) 0px 20px 30px -10px;}
+}
+
+    @keyframes empress{
+        0%{box-shadow: #2C6656 -25px 25px}
+        20%{box-shadow:#ABEAD8 -20px 20px}
+        45%{box-shadow:#64E6C2 -15px 15px}
+        65%{box-shadow:#4A665E -10px 10px}
+        85%{box-shadow:#4DB396 -5px 5px}
+        100%{box-shadow: none;}
+    }
+
+    @keyframes empress2{
+        0%{box-shadow: #f02eaa0d -25px 25px}
+        20%{box-shadow:#f02eaa1a -20px 20px, #f02eaa0d -25px 25px;}
+        45%{box-shadow:#f02eaa33 -15px 15px, #f02eaa1a -20px 20px, #f02eaa0d -25px 25px;}
+        65%{box-shadow:#f02eaa4d -10px 10px, #f02eaa33 -15px 15px, #f02eaa1a -20px 20px, #f02eaa0d -25px 25px;}
+        85%{box-shadow:#f02eaa66 -5px 5px, #f02eaa4d -10px 10px, #f02eaa33 -15px 15px, #f02eaa1a -20px 20px, #f02eaa0d -25px 25px;}
+        100%{box-shadow: #f02eaa66 -5px 5px, #f02eaa4d -10px 10px, #f02eaa33 -15px 15px, #f02eaa1a -20px 20px, #f02eaa0d -25px 25px;}
+    }
+
+    @media(max-width:700px){
+        #hdk1, #hdk2, #hdk3, #hdk4{
+            width: 70%;
+            height: 50%;
+        }
+    }
